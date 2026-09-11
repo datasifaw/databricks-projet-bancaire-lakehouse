@@ -1,5 +1,6 @@
+
 from pyspark import pipelines as dp
-from pyspark.sql.functions import current_timestamp, input_file_name
+from pyspark.sql.functions import current_timestamp, col
 
 BASE_PATH = "/Volumes/workspace/banque_db/sqlserver_files/"
 
@@ -11,9 +12,8 @@ def lire_csv(nom_fichier):
         .option("inferSchema", True)
         .csv(BASE_PATH + nom_fichier)
         .withColumn("date_ingestion", current_timestamp())
-        .withColumn("fichier_source", input_file_name())
+        .withColumn("fichier_source", col("_metadata.file_path"))
     )
-
 
 @dp.materialized_view(name="bronze_branches")
 def bronze_branches():
