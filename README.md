@@ -1,5 +1,5 @@
 
-# Projet bancaire de bout en bout avec Databricks
+# Projet bancaire de bout en bout avec Databricks : 
 ## Pipeline Lakehouse et analyse des données financières
 
 Le scénario métier: 
