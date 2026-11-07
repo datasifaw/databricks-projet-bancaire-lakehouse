@@ -5,7 +5,7 @@
 
 Le scénario métier :
 
-Une entreprise du secteur financier possède ses données dans SQL Server. L’objectif est d’automatiser leur ingestion dans Databricks, de les nettoyer et les fiabiliser avec une architecture Bronze-Silver-Gold, puis de produire des indicateurs financiers et un dashboard pour l’analyse.
+Une entreprise du secteur financier possède ses données dans SQL Server. L’objectif est d’automatiser leur ingestion dans Databricks, de les nettoyer et les fiabiliser avec une architecture Bronze-Silver-Gold, puis de produire des indicateurs financiers et un dashboard pour l’analyse
 
 ## Architecture du projet
 
